@@ -1,12 +1,12 @@
 
-ErrorDocument 400 https://luisweb.cf/error$
-ErrorDocument 401 https://luisweb.cf/error$
-ErrorDocument 403 https://luisweb.cf/error$
-ErrorDocument 404 https://luisweb.cf/error$/404
-ErrorDocument 503 https://luisweb.cf/error$
-php_value display_errors Off
+ErrorDocument 400 https://luisweb.nl/error$
+ErrorDocument 401 https://luisweb.nl/error$
+ErrorDocument 403 https://luisweb.nl/error$
+ErrorDocument 404 https://luisweb.nl/error$/404
+ErrorDocument 503 https://luisweb.nl/error$
+php_value display_errors  On
 php_value mbstring.http_input auto
 php_value date.timezone America/New_York
 RewriteEngine On
 RewriteCond %{HTTPS} off
-RewriteRule ^(.*)$ https://www.luisweb.cf/$1 [L,R=301]
+RewriteRule ^(.*)$ https://www.luisweb.nl/$1 [L,R=301]
